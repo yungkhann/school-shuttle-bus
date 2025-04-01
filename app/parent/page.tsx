@@ -16,13 +16,12 @@ const BusRegistrationForm = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
-  const handleSubmit = async (e) => {
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const response = await axios.post('/api/parent', formData);
@@ -42,6 +41,7 @@ const BusRegistrationForm = () => {
       console.error('Ошибка при отправке формы:', error);
     }
   };
+  
 
   return (
     <div className="w-full py-20 flex flex-col justify-center items-center">

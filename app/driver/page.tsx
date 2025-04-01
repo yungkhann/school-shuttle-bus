@@ -13,14 +13,14 @@ const Driver = () => {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = e => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setUserInput({ ...userInput, [name]: value });
   };
-
-  const handleSubmit = async e => {
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     try {
       const response = await axios.post('/api/driver', userInput);
       if (response.status === 200) {
