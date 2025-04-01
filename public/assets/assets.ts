@@ -6,7 +6,7 @@ import star_icon from './star_icon.svg';
 import left_arrow from './left_arrow.svg';
 import right_arrow from './right_arrow.svg';
 import header_img from './header_img.png';
-import brand_img from './brand_img.png';
+
 import parent_m from './parent-m.svg';
 import parent_f from './parent-f.svg';
 import driver_m from './driver-m.svg';
@@ -15,21 +15,21 @@ import nis from './nis.png';
 import perspective from './perspective.png';
 import qadam from './qadam.png';
 import zerde from './zerde.png';
-
 import mercedesbus from './mercedesbus.png'
+
 // import ms1 from './ms1.jpg';
-import ms2 from './ms2.jpg';
+
 //shuttle bus astana
 export const assets = {
   logo,
-
+  mercedesbus,
   cross_icon,
   menu_icon,
   star_icon,
   left_arrow,
   right_arrow,
   header_img,
-  brand_img,
+
 
   cis,
   nis,
@@ -37,11 +37,11 @@ export const assets = {
   qadam,
   zerde,
   // ms1,
-  ms2,
+
   parent_m,
   parent_f,
   driver_m,
-  mercedesbus
+
 };
 
 
